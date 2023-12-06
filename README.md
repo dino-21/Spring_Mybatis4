@@ -16,7 +16,8 @@ https://blog.naver.com/ysboo2/223283608361
 
 프로젝트 구조
 
-![75](https://github.com/dino-21/mybatis_CRUD4/assets/80396471/25314504-1434-4ab2-abab-3844deb88476)
+![75](https://github.com/dino-21/Spring_Mybatis4/assets/80396471/5da356dc-b350-4a5f-a033-6cddf55da7c2)
+
 
 
 
