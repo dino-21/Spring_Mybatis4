@@ -24,9 +24,9 @@ https://blog.naver.com/ysboo2/223283608361
 Mybatis 스프링 연동해서 CRUD하기  - 목차
 
 
-1. mysql 준비
+1. mysql DB 준비
 
-2. 롬복깔기
+2. 롬복깔기 –스프링에 깔았는지 확인
 
 3. STS에서 스프링 프로젝트 깔기
 - 자바11, 톰캣 9.0확인
@@ -70,10 +70,17 @@ DataSourceTest.java파일 수정하기
 
 13. Mapper 인터페이스 파일 만들기(SQL 쿼리를 정의하고 매핑)
 
-패키지명                     목적 및 기능
-src/main/java                소스코드
-src/main/resources           리소스파일저장, 이미지, xml파일, 프로퍼티 파일 저장, 정적데이터
-src/test/java                테스크 코드를 저장, 안정성 및 기능 검증
+
+패키지명
+목적 및 기능
+src/main/java
+소스코드
+src/main/resources 
+리소스파일저장, 이미지, 
+xml파일, 프로퍼티 파일 저장, 정적데이터
+src/test/java
+테스크 코드를 저장, 안정성 및 기능 검증
+
 
 
 
@@ -115,17 +122,17 @@ public class TestVO {
 
 21. TestMapper의 메서드를 테스트하는 코드 작성
 
-TestMapper.java 인터페이스 메서드
+TestMapper.java 
+인터페이스 메서드
 MyBatis 매퍼(interface)로, 데이터베이스에 대한 쿼리를 정의하는 역할
-
-TestMapper.xml (xml 맵핑)
+TestMapper.xml 
+(xml 맵핑)
 MyBatis XML 파일로, TestMapper.java의 메서드와 SQL 쿼리를 매핑
+TestMapperTest.java (테스트 코드)
+테스트 코드
 
-TestMapperTest.java (테스트 코드) 
 
 JUnit을 사용하여 TestMapper의 메서드를 테스트하는 코드
 Spring과 MyBatis를 통합한 환경에서 TestMapper의 getTime() 메서드를 호출하고 결과를 출력
 
 22. getlist, insert, update, delete 작성하고 mysql에서 확인하기 
-
-
